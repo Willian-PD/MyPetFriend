@@ -1,3 +1,46 @@
 body{
+	font-family: "Arial";
+	margin: 0px;
+}
+#nav-menu{
+	padding: 10px;
+    margin: 0px;
+    background-color: #FFBD4A;
+}
+#nav-menu ul {
+    list-style: none;
+}
+#nav-menu li{ 
+	display: inline; 
+	padding: 10px;
+	width: 100%;
+}
+#nav-menu a{
+	text-decoration: none;
+	font-variant: small-caps;
+	font-size: 20px;
+	color: #000;
+}
+#topo{
+	margin-right: right;
+	padding: 10px;
+    margin: 0px;
+    border: 10px;
+    background-color: #000;
+    color: #FFF;
+}
+#topo a{
+    text-decoration: none;
+	font-variant: small-caps;
+	font-size: 15px;
+	color: #FFF;
+}
+#nav-menu li{
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
 
+#nav-menu li:hover {
+	border-bottom: 2px solid #000;
+    color: white;
 }
