@@ -2,10 +2,12 @@ body{
 	font-family: "Arial";
 	margin: 0px;
 }
+/* Menu de Navegação */
 #nav-menu{
 	padding: 10px;
     margin: 0px;
-    background-color: #FFBD4A;
+    background-color: rgba(255, 189, 74, 0.3);
+
 }
 #nav-menu ul {
     list-style: none;
@@ -17,23 +19,9 @@ body{
 }
 #nav-menu a{
 	text-decoration: none;
-	font-variant: small-caps;
+	text-transform: uppercase;
 	font-size: 20px;
 	color: #000;
-}
-#topo{
-	margin-right: right;
-	padding: 10px;
-    margin: 0px;
-    border: 10px;
-    background-color: #000;
-    color: #FFF;
-}
-#topo a{
-    text-decoration: none;
-	font-variant: small-caps;
-	font-size: 15px;
-	color: #FFF;
 }
 #nav-menu li{
     -webkit-transition-duration: 0.4s;
@@ -43,4 +31,26 @@ body{
 #nav-menu li:hover {
 	border-bottom: 2px solid #000;
     color: white;
+}
+/* Banner e Logo */
+#header{
+	position: relative;
+	background: url(../img/bg.jpg) no-repeat bottom center;
+	background-attachment: fixed;
+	background-size: cover;
+	text-align: center;
+}
+img{
+	padding-top: 50px;
+	width: 500px;
+	height: 100px;
+}
+.logo-text{
+	margin-top: 0px;
+	padding: 0px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 15pt;
+	color: #FFBD4A;
+	padding-bottom: 30px;
 }
