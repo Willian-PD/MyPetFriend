@@ -6,11 +6,8 @@
 		<title> My Pet Friend </title>
 		<meta name="author" content="Mona-lee Antunes e Willian Pereira">
 		<script src="js/main.js"></script>
-		<script src="js/galeria.js"></script>
 		<link rel="stylesheet" type="text/css" 	href="css/main.css" >
-		<link rel="stylesheet" type="text/css" 	href="css/galeria.css" >
     	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    	<link rel="icon" href="img/icon.png">
 	</head>
 	<body>
 		<div id="header">
@@ -33,59 +30,27 @@
 						<img  class="inter-logo" src="img/logo.png" alt="" title="" />
 						<h3>Pets Foundation Inc.</h3>
 					</a>
-					<p>
-						Somos uma organização que tem como objetivo auxiliar <br>
-						familias a encontrar mascotes sem um lar para morar. <br>
-						Você pode tanto doar um pet quanto adotá-lo. <br>
-						Para saber mais clique no botão abaixo.
-					</p>
-					<a href="#" class="btn-primary"> Saiba Mais </a>
 				</div>
 			</div>
 		</div>
-		<!-- Texto -->
-		<div id="intro">
-			<h2 class="title">Adotar é um ato de amor</h2>
-			<p class="text">
-				Ajude um pobre animalzinho a encontrar um lar, você pode 
-				adotar um mascote, doar ou recomendar <br>a um amigo que esteja 
-				em busca de uma nova companhia.
-			</p>
-			<a href="pets.html" class="btn-primary"> adotar </a>
-			<a href="doar.html" class="btn-primary"> doar </a>
+
+		<!-- Login -->
+		<div id="login">
+			<form>
+				<fieldset>
+					<label for="login">Login:</label><br>
+					<input class="borda-login" id="userLog" type="text" name="login" placeholder="nickname ou e-mail">
+					<br><br>
+					<label for="senha">Senha:</label><br>
+					<input class="borda-login" id="userPass" type="password" name="password" placeholder="Escreva o seu nome">
+					<br>
+					<a href="#">Esqueci minha senha</a>
+					<br><br>
+ 					<input type="submit" value="Entrar" onclick="logar(this)">
+					<p>Não possui um usuário?<a href="cadastro.html">Cadastre-se agora</a></p>
+				</fieldset>
+			</form>
 		</div>
-		<div id="gallery">
-			<header>
-				<center class="text-glr"><h2>Fique de Olho</h2></center>
-			</header>
-			<section class="gallery-container">
-
-            	<!--Slide-->
-            	<div class="mySlides fade" style="display: block;"> <!-- 01 -->
-            	    <div class="numbertext">01 / 03</div>
-            	    <img class="imgslide" src="img/grep.jpg" alt="Arara Azul">
-                	<div class="text">Olha os gatinhos fazendo a diferença</div>
-            	</div>
-
-            	<div class="mySlides fade" style="display: none;"> <!-- 02 -->
-            	    <div class="numbertext">02 / 03</div>
-                	<img class="imgslide" src="img/crep.jpg" alt="Arara Canindé">
-            	    <div class="text">Os cachorrinhos também divertem e mostram que adotar é a melhor escolha</div>
-            	</div>
-
-            	<div class="mySlides fade" style="display: none;"> <!-- 03 -->
-            	    <div class="numbertext">03 / 03</div>
-            	    <img class="imgslide" src="img/crep2.jpg" alt="Papagaio Verdadeiro">
-            	    <div class="text">Não é só um animal é membro da sua familia</div>
-            	</div>
-
-           		<!--Final Slides-->
-
-        	    <!--Navigation-->
-        	    <a class="prev" onclick="plusSlides(-1)">❮</a>
-        	    <a class="next" onclick="plusSlides(1)">❯</a>
-        	</section>
-    	</div>
 		<!-- Redes Sociais -->
 		<div id="footer">
 			<div class="tweet">

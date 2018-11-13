@@ -1,6 +1,44 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body{
-	font-family: "Arial";
+	font-family: "Nunito";
 	margin: 0px;
+	font-size: 15px;
+	text-decoration: none;
+	color: #777;
+}
+/* Botões */
+#logo .btn-primary, #intro .btn-primary, #main .btn-primary, #gallery .btn-primary{
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#logo .btn-primary, #intro .btn-primary, #main .btn-primary, #gallery .btn-primary{
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+#logo .btn-primary:hover, #intro .btn-primary:hover, #main .btn-primary:hover, #gallery .btn-primary:hover{
+    background-color: #FFBD4A;
+    color: #000000;
+    box-shadow: 10px;
+}
+#main .btn-primary, #gallery .btn-primary{
+	text-align: center;
+}
+#gallery .btn-primary{
+	margin-top: 50px
 }
 /* Menu de Navegação */
 #nav-menu{
@@ -13,7 +51,7 @@ body{
     list-style: none;
 }
 #nav-menu li{ 
-	display: inline; 
+	display: inline;
 	padding: 10px;
 	width: 100%;
 }
@@ -40,17 +78,154 @@ body{
 	background-size: cover;
 	text-align: center;
 }
-img{
+.inter-logo{
 	padding-top: 50px;
-	width: 500px;
-	height: 100px;
+	width: 350px;
+	height: 120px;
+	margin-bottom: 0px;
 }
-.logo-text{
+#logo a{
 	margin-top: 0px;
 	padding: 0px;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-size: 15pt;
+	font-size: 13pt;
 	color: #FFBD4A;
-	padding-bottom: 30px;
+	padding-bottom: 50px;
+}
+#logo a h3{
+	margin: 0px;;
+}
+#logo p{
+	color: #FFF;
+	font-size: 1.4em;
+	text-shadow: 1px 2px #000;
+}
+
+/* Introdução e Apresentação */
+#intro{
+	text-align: center;
+	background-color: #F0F0F0;
+
+}
+#intro .title{
+	font-size: 30pt;
+	margin-top: 0px;
+	padding-top: 50px;
+	font-weight: bold;
+	color: #FFBD4A;
+}
+#intro .text{
+	font-size: 15pt;
+	color: #777;
+	padding-bottom: 50px;
+	margin: 0px;
+	padding-left: 50px; 
+	padding-right: 50px;
+}
+#intro .nos{
+	padding-top: 30px;
+	font-size: 18pt;
+	color: #777;
+	padding-bottom: 50px;
+	margin: 0px;
+	padding-left: 100px; 
+	padding-right: 100px;
+}
+#ident{
+	border: 2px solid #000;
+}
+/* Cadastro */
+#main{
+	padding-bottom: 50px;
+}
+#logo h1{
+	text-transform: uppercase;
+	font-size: 25pt;
+	color: #FFBD4A;
+}
+#form-primary .byline{
+	text-align: center;
+	font-size: 15pt;
+}
+#login{
+	padding: 100px;
+}
+.borda{
+	border-radius: 3px;
+	border: 1px solid #777;
+	padding: 5px;
+}
+fieldset{
+	width: 40%; 
+	margin: 0px auto;
+}
+#btn-form{ text-align: center; }
+button{
+	text-align: center;
+}
+/* Login */
+#login{
+	text-align: center;
+}
+
+.borda-login{
+	border-radius: 3px;
+	border: 1px solid grey;
+	width: 150px;
+	padding: 5px;
+}
+/* Footer */
+.tweet{
+	position: relative;
+	background: url(../img/pet-2.jpg) no-repeat bottom center;
+	background-attachment: fixed;
+	text-align: center;
+	color: #F0F0F0;
+	background-size: cover;
+	padding: 50px; 
+}
+.tweet p{
+	color: #FFF;
+	font-size: 1.4em;
+	text-shadow: 1px 2px #000;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#footer{
+	background-color: #000013;
+	text-align: center;
+	color: #FFF;
+	
+}
+#footer ul{
+	text-align: center;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#footer li{
+	display: inline;
+	padding: 10px;
+	width: 100%;
+	list-style-type: none;
+}
+#footer .icon{
+	width: 40px;
+	height: 40px;
+}
+#copyright{
+	margin-top: 0%;
+	background-color: #000;
+	padding: 15px;
+}
+#copyright .devs a{
+	color: #777;
+	text-decoration: none;
+}
+/* Doação */
+#donate-page{
+	text-align: center;
+	margin: 40px;
+	padding-bottom: 50px;
+	padding-top: 50px;
 }

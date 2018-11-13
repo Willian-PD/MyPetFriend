@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" >
+		<title> My Pet Friend </title>
+		<meta name="author" content="Mona-lee Antunes e Willian Pereira">
+		<script src="js/main.js"></script>
+		<link rel="stylesheet" type="text/css" 	href="css/main.css" >
+    	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	</head>
+	</head>
+	<body>
+		<div id="header">
+			<div id="menu"> 
+				<!-- Nav -->
+				<nav id="nav-menu">
+					<ul>
+						<li><a href="index.html">página inicial</a></li>
+			        	<li><a href="login.html">login</a></li>
+			        	<li><a href="cadastro.html">cadastro</a></li>
+			        	<li><a href="sobrenos.html">sobre nós</a></li>
+			        	<li><a href="pets.html">pets</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="logo">
+				<a href="index.html">
+					<img class="inter-logo" src="img/logo.png" alt="" title="" />
+					<h3>Pets Foundation Inc.</h3>
+				</a>
+				<h1>cadastro</h1>
+			</div>
+		</div>
+		<!-- Formulário -->
+		<div id="main">
+			<section>
+				<form id="form-primary">
+					<header class="byline">
+						<h2>Faça seu cadastro</h2>
+						<span>Inscreva-se</span>
+					</header>
+					<!-- DADOS PESSOAIS-->
+					<fieldset>
+						<legend>Cadastro</legend>
+						<table cellspacing="20">
+							<h1> Dados Pessoais </h1>
+							<tr>
+								<td>
+									<label for="nome">Nome: </label>
+								</td>
+								<td>
+									<input class="borda" id="name" type="text" name="nome" placeholder="Escreva o seu nome">
+								</td>
+							<tr>
+								<td>
+									<label>Nascimento: </label>
+								</td>
+								<td>
+									<input class="borda" id="data" type="date" name="data" size="2" maxlength="2" placeholder="dd"> 
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="rg">RG: </label>
+								</td>
+								<td>
+									<input class="borda" id="reg" type="text" name="rg" size="13" maxlength="13" placeholder="xxxxxxxxx "> 
+									</td>
+							</tr>
+							<tr>
+								<td>
+								    <label>CPF: </label>
+								</td>
+								<td>
+									<input class="borda" id="cpf" type="text" name="cpf" size="12" maxlength="11" placeholder="xxxxxxxxxxx"/>
+								</td>
+							</tr>
+						</table>
+						<!-- ENDEREÇO -->
+						<h1>Endereço</h1>					
+						<table cellspacing="10">
+							<tr>
+								<td>
+							    	<label for="rua">Rua: </label>
+								</td>
+								<td>
+								    <input class="borda" id="rua" type="text" name="rua" placeholder="ex:Rua Jardim Maravilha">
+								</td>
+								<td>
+								    <label for="numero">Numero: </label>
+								</td>
+								<td>
+									<input class="borda" id="numero" type="text" name="numero" size="4" placeholder="ex:000">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="bairro">Bairro: </label>
+								</td>
+								<td>
+									<input class="borda" id="bairro" type="text" name="bairro" placeholder="ex:Santa Cruz">
+								</td>
+							</tr>
+							<tr>
+								<td>
+								    <label for="estado">Estado: </label>
+								</td>
+								<td>
+								    <select name="estado" id="estado"> 
+								    	<option value="sl">selecionar</option>
+								    	<option value="ac">Acre</option> 
+								    	<option value="al">Alagoas</option> 
+								    	<option value="am">Amazonas</option> 
+								    	<option value="ap">Amapá</option> 
+								    	<option value="ba">Bahia</option> 
+								    	<option value="ce">Ceará</option> 
+								    	<option value="df">Distrito Federal</option> 
+								    	<option value="es">Espírito Santo</option> 
+								    	<option value="go">Goiás</option> 
+								    	<option value="ma">Maranhão</option> 
+								    	<option value="mt">Mato Grosso</option> 
+								    	<option value="ms">Mato Grosso do Sul</option> 
+								    	<option value="mg">Minas Gerais</option> 
+								    	<option value="pa">Pará</option> 
+								    	<option value="pb">Paraíba</option> 
+								    	<option value="pr">Paraná</option> 
+								    	<option value="pe">Pernambuco</option> 
+								    	<option value="pi">Piauí</option> 
+								    	<option value="rj">Rio de Janeiro</option> 
+								    	<option value="rn">Rio Grande do Norte</option> 
+								    	<option value="ro">Rondônia</option> 
+								    	<option value="rs">Rio Grande do Sul</option> 
+								    	<option value="rr">Roraima</option> 
+								    	<option value="sc">Santa Catarina</option> 
+								    	<option value="se">Sergipe</option> 
+								    	<option value="sp">São Paulo</option> 
+								    	<option value="to">Tocantins</option> 
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								    <label for="cidade">Cidade: </label>
+								</td>
+								<td>
+								    <input class="borda" id="cidade" type="text" name="cidade" placeholder="São Paulo">
+								</td>
+							</tr>
+							<tr>
+								<td>
+								    <label for="cep">CEP: </label>
+								</td>
+								<td>
+								    <input class="borda" id="cep" type="text" name="cep" size="5" maxlength="5" placeholder="xxxxx"> - <input class="borda" type="text" name="cep2" size="3" maxlength="3" placeholder="xxx">
+								</td>
+							</tr>
+						</table>
+						<!-- DADOS DE LOGIN -->
+						<h1>Informações de acesso</h1>
+						<table cellspacing="10">
+							<tr>
+								<td>
+									<label for="email" >E-mail: </label>
+								</td>
+								<td>
+									<input class="borda" id="email" type="text" name="email" placeholder="email@email.com.br">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="imagem">Imagem de perfil: </label>
+								</td>
+								<td>
+									<input type="file" accept="image/*" id="image" name="imagem" >
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="login">Login de usuário: </label>
+								</td>
+								<td>
+									<input class="borda" id="usuario" type="text" name="login" placeholder="nickname">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="pass">Senha: </label>
+								</td>
+								<td>
+									<input class="borda" id="senha" type="password" name="pass" placeholder="********">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="passconfirm">Confirme a senha: </label>
+								</td>
+								<td>
+									<input class="borda" id="senhaConfirm" type="password" name="passconfirm" placeholder="********">
+								</td>
+							</tr>
+						</table>
+						<br>
+							<div id="btn-form">
+								<input type="submit" onclick="registrar(this)">
+								<input type="reset" value="Limpar">
+							</div>
+						</table>
+					</fieldset>
+				</section>
+			</form>
+		</div>
+		<!-- Redes Sociais -->
+		<div id="footer">
+			<!-- Frase de efeito-->
+			<div class="tweet">
+				<section>
+					<p class="inter-tweet">"Adotar um animal é escolher ser um anjo. Os anjos protegem seus escolhidos e em troca recebem o que cada animal tem<br> de mais precioso: Seu coração transbordando AMOR e GRATIDÃO e isso torna a vida especial!"
+					</p>
+				</section>
+			</div>
+			<div>
+				<section>
+					<header>
+						<h2>Entre em Contato</h2>
+					</header>
+					<ul>
+						<li><a href="#"><img class="icon" src="https://debrynegraphics.com/wp-content/uploads/2016/01/twitter-icon.png" alt="" title="" /></a></li>
+						<li><a href="#"><img class="icon" src="https://www.tempt.com.br/image/facebook-icon.png" alt="" title="" /></a></li>
+						<li><a href="#"><img class="icon" src="https://alltak.com.br/wp-content/uploads/2017/07/icone-instagram-alltak-adesivos.png" alt="" title="" /></a></li>
+						<li><a href="#"><img class="icon" src="https://www.freeiconspng.com/uploads/white-pinterest-logo-png--30.png" alt="" title="" /></a></li><br><br>
+						<li class="text">+55 21 98479 8722 | +55 21 9 7197 1803</li>
+					</ul>
+				</section>
+			</div>
+			<!-- Desenvolvedores WM - Willian e Mona-Lee -->
+			<div id="copyright">
+				<div class="devs">
+					Design: <a href="http://www.wmdesenvolvedores.com.br"> WM_Desenvolvedores</a>
+					Imagens: <a href="http://google.com.br"> Google</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
